@@ -34,7 +34,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by jonastheis on 29.05.15.
+ * Make some simple HTTP Requests when it is clicked on specific Button.
+ * HttpURLConnection and Apache HttpClient is used for demonstration.
  */
 public class HttpRequestsActivity extends Activity {
     final String TAG = HttpRequestsActivity.class.getSimpleName();
@@ -77,7 +78,7 @@ public class HttpRequestsActivity extends Activity {
 
                     HttpClient httpClient = new DefaultHttpClient(httpParameters);
                     HttpGet httpGet = new HttpGet(strings[0]);
-
+                    
                     // make request
                     HttpResponse httpResponse = httpClient.execute(httpGet);
                     int response = httpResponse.getStatusLine().getStatusCode();
