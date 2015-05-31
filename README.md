@@ -1,4 +1,4 @@
-# android-network-demo
+android-network-demo
 ==============
 
 A simple demo app for networking in Android.
